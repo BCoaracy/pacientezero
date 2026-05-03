@@ -6,3 +6,13 @@
 *.dylib
 /bin/
 /dist/
+# Go
+vendor/
+*.test
+*.out
+coverage.html
+
+# IDE
+.idea/
+.vscode/
+*.swp

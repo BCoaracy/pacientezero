@@ -211,14 +211,14 @@ JWT_SECRET=<gerado com: openssl rand -base64 32>
 ## Fases do projeto
 
 ### Fase 1 — Setup & infraestrutura
-- [ ] Criar repositório no GitHub
-- [ ] Inicializar módulo Go (`go mod init`)
-- [ ] Criar `docker-compose.yml` com serviços `db` e `api`
-- [ ] Criar `Dockerfile` multi-stage para o binário Go
+- [x] Criar repositório no GitHub
+- [x] Inicializar módulo Go (`go mod init`)
+- [x] Criar `docker-compose.yml` com serviços `db` e `api`
+- [x] Criar `Dockerfile` multi-stage para o binário Go
 - [ ] Validar que `docker compose up` sobe o banco e a API
-- [ ] Criar estrutura de pastas (`cmd/`, `internal/`)
-- [ ] Configurar linter (`golangci-lint`)
-- [ ] Criar `.env.example` e adicionar `.env` ao `.gitignore`
+- [x] Criar estrutura de pastas (`cmd/`, `internal/`)
+- [x] Configurar linter (`golangci-lint`)
+- [x] Criar `.env.example` e adicionar `.env` ao `.gitignore`
 
 ### Fase 2 — Model: schema, migrations e structs
 - [ ] Escrever migrations SQL iniciais (enums + tabelas `usuarios` e `pacientes`)
