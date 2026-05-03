@@ -227,10 +227,10 @@ JWT_SECRET=<gerado com: openssl rand -base64 32>
 - [x] Decidir biblioteca de migration (golang-migrate)
 
 ### Fase 3 — Repository: acesso ao banco
-- [ ] Criar `internal/db/db.go` — pool de conexões com `pgx` ou `database/sql`
-- [ ] Implementar `internal/repository/usuario.go` — CRUD com queries parametrizadas
-- [ ] Implementar `internal/repository/paciente.go`
-- [ ] Escrever testes de integração dos repositórios (banco real em Docker)
+- [x] Criar `internal/db/db.go` — pool de conexões com `pgx` ou `database/sql`
+- [x] Implementar `internal/repository/usuario.go` — CRUD com queries parametrizadas
+- [x] Implementar `internal/repository/paciente.go`
+- [x] Escrever testes de integração dos repositórios (banco real em Docker)
 
 ### Fase 4 — Service: lógica de negócio
 - [ ] Implementar `internal/service/usuario.go` — hash de senha, validações de negócio
@@ -245,7 +245,7 @@ JWT_SECRET=<gerado com: openssl rand -base64 32>
 - [ ] Criar `internal/middleware/auth.go` — valida JWT em rotas protegidas
 - [ ] Criar `internal/middleware/rate_limit.go`
 - [ ] Configurar headers de segurança e CORS
-- [ ] Escrever testes de integração dos handlers
+- [x] Escrever testes de integração dos handlers
 
 ### Fase 6 — Frontend (a definir)
 - [ ] Avaliar frameworks compatíveis com Go (HTMX + Templ, Next.js standalone, SvelteKit, etc.)
