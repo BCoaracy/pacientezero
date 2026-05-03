@@ -4,9 +4,15 @@ import (
 	"log"
 	"net/http"
 	"os"
+
+	"github.com/BCoaracy/pacientezero/internal/db"
 )
 
 func main() {
+	if err := db.RunMigrations(); err != nil {
+		log.Fatalf("migrations: %v", err)
+	}
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"

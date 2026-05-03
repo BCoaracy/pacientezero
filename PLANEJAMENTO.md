@@ -221,10 +221,10 @@ JWT_SECRET=<gerado com: openssl rand -base64 32>
 - [x] Criar `.env.example` e adicionar `.env` ao `.gitignore`
 
 ### Fase 2 — Model: schema, migrations e structs
-- [ ] Escrever migrations SQL iniciais (enums + tabelas `usuarios` e `pacientes`)
-- [ ] Definir structs de domínio em `internal/model/`
-- [ ] Criar script de seed para dev/test
-- [ ] Decidir biblioteca de migration (golang-migrate ou goose)
+- [x] Escrever migrations SQL iniciais (enums + tabelas `usuarios` e `pacientes`)
+- [x] Definir structs de domínio em `internal/model/`
+- [x] Criar script de seed para dev/test
+- [x] Decidir biblioteca de migration (golang-migrate)
 
 ### Fase 3 — Repository: acesso ao banco
 - [ ] Criar `internal/db/db.go` — pool de conexões com `pgx` ou `database/sql`
