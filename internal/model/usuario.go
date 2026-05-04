@@ -37,3 +37,13 @@ type UsuarioResponse struct {
 	EmailVerified bool      `json:"email_verified"`
 	CriadoEm     time.Time `json:"criado_em"`
 }
+
+type LoginRequest struct {
+	Email string `json:"email"`
+	Senha string `json:"senha"`
+}
+
+type LoginResponse struct {
+	Token string          `json:"token"`
+	User  UsuarioResponse `json:"user"`
+}
