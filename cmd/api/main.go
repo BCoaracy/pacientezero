@@ -65,7 +65,7 @@ func main() {
 		port = "8080"
 	}
 
-	root := middleware.RateLimit(60)(securityHeaders(mux))
+	root := middleware.RateLimit(60)(middleware.CORS(securityHeaders(mux)))
 
 	log.Printf("API iniciando na porta %s", port)
 	if err := http.ListenAndServe(":"+port, root); err != nil {

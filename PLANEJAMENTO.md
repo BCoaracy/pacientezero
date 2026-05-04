@@ -233,18 +233,19 @@ JWT_SECRET=<gerado com: openssl rand -base64 32>
 - [x] Escrever testes de integração dos repositórios (banco real em Docker)
 
 ### Fase 4 — Service: lógica de negócio
-- [ ] Implementar `internal/service/usuario.go` — hash de senha, validações de negócio
-- [ ] Implementar `internal/service/paciente.go`
-- [ ] Criar `internal/model/errors.go` — erros tipados (`NotFound`, `Unauthorized`, etc.)
-- [ ] Escrever testes unitários dos services (mock dos repositories)
+- [x] Implementar `internal/service/usuario.go` — hash de senha, validações de negócio
+- [x] Implementar `internal/service/paciente.go`
+- [x] Criar `internal/model/errors.go` — erros tipados (`NotFound`, `Unauthorized`, etc.)
+- [x] Escrever testes unitários dos services (mock dos repositories)
 
 ### Fase 5 — Handler: API REST e autenticação
-- [ ] Escolher router HTTP (net/http padrão, chi, gin, echo)
-- [ ] Implementar handlers CRUD para `usuarios` e `pacientes`
-- [ ] Implementar endpoint `/login` — valida credenciais, emite JWT
-- [ ] Criar `internal/middleware/auth.go` — valida JWT em rotas protegidas
-- [ ] Criar `internal/middleware/rate_limit.go`
-- [ ] Configurar headers de segurança e CORS
+- [x] Escolher router HTTP (net/http padrão — Go 1.22+)
+- [x] Implementar handlers CRUD para `usuarios` e `pacientes`
+- [x] Implementar endpoint `/login` — valida credenciais, emite JWT
+- [x] Criar `internal/middleware/auth.go` — valida JWT em rotas protegidas
+- [x] Criar `internal/middleware/rate_limit.go`
+- [x] Configurar headers de segurança (X-Frame-Options, nosniff, Referrer-Policy)
+- [x] Configurar CORS restritivo
 - [x] Escrever testes de integração dos handlers
 
 ### Fase 6 — Frontend (a definir)
