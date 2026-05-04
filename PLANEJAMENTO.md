@@ -245,8 +245,8 @@ JWT_SECRET=<gerado com: openssl rand -base64 32>
 - [x] Criar `internal/middleware/auth.go` — valida JWT em rotas protegidas
 - [x] Criar `internal/middleware/rate_limit.go`
 - [x] Configurar headers de segurança (X-Frame-Options, nosniff, Referrer-Policy)
-- [ ] Configurar CORS restritivo
-- [ ] Escrever testes de integração dos handlers
+- [x] Configurar CORS restritivo
+- [x] Escrever testes de integração dos handlers
 
 ### Fase 6 — Frontend (a definir)
 - [ ] Avaliar frameworks compatíveis com Go (HTMX + Templ, Next.js standalone, SvelteKit, etc.)
