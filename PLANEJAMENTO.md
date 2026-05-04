@@ -211,26 +211,26 @@ JWT_SECRET=<gerado com: openssl rand -base64 32>
 ## Fases do projeto
 
 ### Fase 1 — Setup & infraestrutura
-- [ ] Criar repositório no GitHub
-- [ ] Inicializar módulo Go (`go mod init`)
-- [ ] Criar `docker-compose.yml` com serviços `db` e `api`
-- [ ] Criar `Dockerfile` multi-stage para o binário Go
+- [x] Criar repositório no GitHub
+- [x] Inicializar módulo Go (`go mod init`)
+- [x] Criar `docker-compose.yml` com serviços `db` e `api`
+- [x] Criar `Dockerfile` multi-stage para o binário Go
 - [ ] Validar que `docker compose up` sobe o banco e a API
-- [ ] Criar estrutura de pastas (`cmd/`, `internal/`)
-- [ ] Configurar linter (`golangci-lint`)
-- [ ] Criar `.env.example` e adicionar `.env` ao `.gitignore`
+- [x] Criar estrutura de pastas (`cmd/`, `internal/`)
+- [x] Configurar linter (`golangci-lint`)
+- [x] Criar `.env.example` e adicionar `.env` ao `.gitignore`
 
 ### Fase 2 — Model: schema, migrations e structs
-- [ ] Escrever migrations SQL iniciais (enums + tabelas `usuarios` e `pacientes`)
-- [ ] Definir structs de domínio em `internal/model/`
-- [ ] Criar script de seed para dev/test
-- [ ] Decidir biblioteca de migration (golang-migrate ou goose)
+- [x] Escrever migrations SQL iniciais (enums + tabelas `usuarios` e `pacientes`)
+- [x] Definir structs de domínio em `internal/model/`
+- [x] Criar script de seed para dev/test
+- [x] Decidir biblioteca de migration (golang-migrate)
 
 ### Fase 3 — Repository: acesso ao banco
-- [ ] Criar `internal/db/db.go` — pool de conexões com `pgx` ou `database/sql`
-- [ ] Implementar `internal/repository/usuario.go` — CRUD com queries parametrizadas
-- [ ] Implementar `internal/repository/paciente.go`
-- [ ] Escrever testes de integração dos repositórios (banco real em Docker)
+- [x] Criar `internal/db/db.go` — pool de conexões com `pgx` ou `database/sql`
+- [x] Implementar `internal/repository/usuario.go` — CRUD com queries parametrizadas
+- [x] Implementar `internal/repository/paciente.go`
+- [x] Escrever testes de integração dos repositórios (banco real em Docker)
 
 ### Fase 4 — Service: lógica de negócio
 - [ ] Implementar `internal/service/usuario.go` — hash de senha, validações de negócio
@@ -245,7 +245,7 @@ JWT_SECRET=<gerado com: openssl rand -base64 32>
 - [ ] Criar `internal/middleware/auth.go` — valida JWT em rotas protegidas
 - [ ] Criar `internal/middleware/rate_limit.go`
 - [ ] Configurar headers de segurança e CORS
-- [ ] Escrever testes de integração dos handlers
+- [x] Escrever testes de integração dos handlers
 
 ### Fase 6 — Frontend (a definir)
 - [ ] Avaliar frameworks compatíveis com Go (HTMX + Templ, Next.js standalone, SvelteKit, etc.)
